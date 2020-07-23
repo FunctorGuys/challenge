@@ -19,6 +19,7 @@ $(() => {
           $form.trigger('reset');
         })
         .catch((err) => {
+          // FIXME: Maybe handle server validation here
           toastr.error(propOr('Something went wrong', 'title', err));
         })
         .finally(() => {
