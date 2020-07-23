@@ -1,9 +1,9 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const Dotenv = require('dotenv-webpack');
-
+const dotenv = require('dotenv');
 
 module.exports = {
   entry: './src/index.js',
@@ -22,13 +22,15 @@ module.exports = {
         },
       },
       {
-        test: /\.scss$/,
+        test: /\.(sa|sc|c)ss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
   plugins: [
-    new Dotenv(),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(dotenv.config().parsed),
+    }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
@@ -46,6 +48,6 @@ module.exports = {
   devServer: {
     contentBase: 'build',
     watchContentBase: true,
-    port: 9000,
+    port: process.env.PORT || 9000,
   },
 };
