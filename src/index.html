@@ -6,8 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 </head>
 <body>
-    <div class="l-container">
+    <div class="c-loader u-hide js-loader">
+        <div class="c-loader__spinner"></div>
+    </div>
 
+    <div class="p-home">
+        <div class="l-container">
+            <div class="p-home__form-wrapper">
+                <form class="p-home__form js-signup-mail">
+                    <h3 class="p-home__form-title">Join the mailing list</h3>
+
+                    <div class="o-input-group">
+                        <input type="text" name="email" placeholder="Your email"
+                               class="p-home__input o-input o-input--large"
+                               data-rules='[{ "rule": "isEmpty", "message": "Please input email" }, { "rule": "isEmail", "message": "Please input correct email format" }]'/>
+
+                        <div class="o-input-group__append">
+                            <button type="submit" class="o-button o-button--dark o-button--large u-cursor-pointer">
+                                Sign up
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

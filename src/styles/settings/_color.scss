@@ -16,6 +16,7 @@ $cinnabar: #e44849;
 $han-purple: #4913e4;
 $medium-blue: #0000B5;
 $black: #000;
+$bright-sun: #eab12e;
 
 
 /**
@@ -93,6 +94,9 @@ $paletters: (
   black: (
     base: $black,
   ),
+  bright-sun: (
+    base: $bright-sun
+  )
 );
 
 // Main color

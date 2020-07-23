@@ -1,0 +1,24 @@
+.p-home {
+  &__form-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  &__form {
+    background: palette(bright-sun);
+    border-radius: 10px;
+    width: 500px;
+    padding: 40px 50px
+  }
+
+  &__form-title {
+    margin-top: 0;
+  }
+
+  &__input {
+    background: palette(bright-sun) !important;
+  }
+}

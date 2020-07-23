@@ -1,0 +1,9 @@
+.o-input-group {
+  position: relative;
+
+  &__append {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+  }
+}

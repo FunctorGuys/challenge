@@ -1,0 +1,26 @@
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.c-loader {
+  align-items: center;
+  background: rgba(0, 0, 0, .7);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+
+  &__spinner {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+  }
+}

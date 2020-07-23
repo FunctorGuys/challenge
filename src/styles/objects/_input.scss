@@ -1,0 +1,21 @@
+.o-input {
+  background-color: #fff;
+  border: 1px solid #bd8f24;
+  border-radius: 7px;
+  color: #495057;
+  display: block;
+  padding: 6px 12px;
+  width: 100%;
+
+  &:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+
+  &--large {
+    padding: 18px 24px;
+  }
+}
