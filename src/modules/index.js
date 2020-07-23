@@ -1,1 +1,4 @@
-alert(1)
+import "toastr/toastr.scss";
+import '../styles/main.scss';
+
+import './signup';
