@@ -1,0 +1,55 @@
+@if (variable-exists(font-size--h1)) {
+  .u-h1 { @include font-size($font-size--h1, auto, important); }
+  .u-h2 { @include font-size($font-size--h2, auto, important); }
+  .u-h3 { @include font-size($font-size--h3, auto, important); }
+  .u-h4 { @include font-size($font-size--h4, auto, important); }
+  .u-h5 { @include font-size($font-size--h5, auto, important); }
+  .u-h6 { @include font-size($font-size--h6, auto, important); }
+
+} @else {
+  @warn "You need to include `setttings/_font.scss`.";
+}
+
+$font-maps: (
+  8: 8px,
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  22: 22px,
+  24: 24px,
+  32: 32px,
+);
+@each $key, $value in $font-maps {
+  .u-fz-#{$key} {font-size: $value  !important;}
+}
+
+.u-text\+\+ { font-size: larger  !important; }
+.u-text--   { font-size: smaller !important; }
+
+.u-text-right   { text-align: right !important; }
+.u-text-left    { text-align: left !important; }
+.u-text-center  { text-align: center !important; }
+.u-text-justify { text-align: justify !important; }
+
+.u-text-truncate { @include truncate(100%, important); }
+
+.u-text-uppercase {text-transform: uppercase !important;}
+
+.u-text-lowercase {text-transform: lowercase !important;}
+
+.u-text-capitalize {text-transform: capitalize !important;}
+
+.u-text-initial {text-transform: initial !important;}
+
+.u-text-bold { font-weight: bold !important; }
+.u-text-normal { font-weight: normal !important; }
+.u-text-italic { font-style: italic; }
+.u-text-strike { text-decoration: line-through; }
+
+.u-line-height-0 {
+  line-height: 0 !important;
+}
+
+.u-break-word {
+  word-break: break-word;
+}

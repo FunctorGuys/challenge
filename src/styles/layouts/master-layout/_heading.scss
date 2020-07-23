@@ -1,0 +1,58 @@
+.l-master-layout-heading {
+  align-items: center;
+  background: #e51c71;
+  display: flex;
+  padding: 5px 15px;
+
+  &__service-menu {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &__arrow-icon {
+    line-height: 0;
+    transition: all 0.3s;
+    transform-origin: center;
+
+    &--up {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__contact {
+    align-items: center;
+    color: palette(white);
+    display: flex;
+    padding: 0 20px;
+  }
+
+  &__ads {
+    align-items: center;
+    color: palette(white);
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.l-master-layout-heading {
+  @include responsive-down(md) {
+    &__container {
+      justify-content: center;
+    }
+  }
+
+  @include responsive-down(sm) {
+    &__service-menu {
+      display: none;
+    }
+
+    &__contact {
+      padding: 0;
+    }
+  }
+
+  @include responsive-down(xs) {
+    &__container {
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+$amber: #ffc003;
+$charcoal: #494949;
+$dark-grey: #555;
+$dodger-blue: #1890ff;
+$bahama-blue: #244475;
+$sherpa-blue: #003953;
+$navy-blue: #0076bd;
+$gainsboro: #e8e8e8;
+$solitude: #eef2f4;
+$white: #fff;
+$white-smoke: #f4f4f4;
+$windsor: #2b2a7b;
+$indigo: #42006a;
+$neon-carrot: #ff9933;
+$cinnabar: #e44849;
+$han-purple: #4913e4;
+$medium-blue: #0000B5;
+$black: #000;
+
+
+/**
+ * Color Paletters Modiers
+ *
+ * How to use: map-get(map-get($paletter, grey), xx-light);
+ * Example: palette(grey, light);
+ */
+$paletters: (
+  amber: (
+    base: $amber,
+    light-5: lighten($amber, 5%),
+    light-10: lighten($amber, 10%),
+  ),
+  charcoal: (
+    light-20: lighten($charcoal, 20%),
+    light-15: lighten($charcoal, 15%),
+    light-10: lighten($charcoal, 10%),
+    light-5: lighten($charcoal, 5%),
+    base: $charcoal,
+    dark-5: darken($charcoal, 5%),
+    dark-10: darken($charcoal, 10%),
+    dark-15: darken($charcoal, 15%),
+  ),
+  dodger-blue: (
+    base: $dodger-blue,
+    dark-5: darken($dodger-blue, 5%),
+    dark-10: darken($dodger-blue, 10%),
+  ),
+  gainsboro: (
+    base: $gainsboro,
+    dark-10: darken($gainsboro, 10%),
+  ),
+  solitude: (
+    base: $solitude,
+  ),
+  dark-grey: (
+    base: $dark-grey,
+  ),
+  primary: (
+    base: $windsor,
+  ),
+  white: (
+    base: $white,
+  ),
+  neon-carrot: (
+    base: $neon-carrot,
+  ),
+  indigo: (
+    base: $indigo,
+  ),
+  navy-blue: (
+    base: $navy-blue,
+  ),
+  sherpa-blue: (
+    base: $sherpa-blue,
+    dark-5: darken($sherpa-blue, 5%),
+  ),
+  white-smoke: (
+    base: $white-smoke,
+    dark-10: darken($white-smoke, 10%),
+  ),
+  bahama-blue: (
+    base: $bahama-blue,
+  ),
+  cinnabar: (
+    base: $cinnabar,
+  ),
+  han-purple: (
+    base: $han-purple,
+  ),
+  medium-blue: (
+    base: $medium-blue,
+  ),
+  black: (
+    base: $black,
+  ),
+);
+
+// Main color
+$color-primary: $navy-blue;
+$color-secondary: $amber;

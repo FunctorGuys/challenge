@@ -1,0 +1,50 @@
+$box-model-maps: (
+  auto: auto,
+  0: 0px,
+  5: 5px,
+  10: 10px,
+  15: 15px,
+  16: 16px,
+  20: 20px,
+  25: 25px,
+  30: 30px,
+  40: 40px,
+  50: 50px,
+);
+@each $key, $value in $box-model-maps {
+  .u-mg-#{$key} {margin: $value !important;}
+  .u-mgb-#{$key} {margin-bottom: $value !important;}
+  .u-mgt-#{$key} {margin-top: $value !important;}
+  .u-mgl-#{$key} {margin-left: $value !important;}
+  .u-mgr-#{$key} {margin-right: $value !important;}
+
+  .u-pd-#{$key} {padding: $value !important;}
+  .u-pdb-#{$key} {padding-bottom: $value !important;}
+  .u-pdt-#{$key} {padding-top: $value !important;}
+  .u-pdl-#{$key} {padding-left: $value !important;}
+  .u-pdr-#{$key} {padding-right: $value !important;}
+
+  .u-mgx-#{$key} {
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+
+  .u-mgy-#{$key} {
+    margin-bottom: $value !important;
+    margin-top: $value !important;
+  }
+
+  .u-pdx-#{$key} {
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+
+  .u-pdy-#{$key} {
+    padding-bottom: $value !important;
+    padding-top: $value !important;
+  }
+}
+
+.u-no-collapse {padding: 0.1px !important;}
+.u-no-border {border: none !important;}
+.u-no-outline {outline: none !important;}

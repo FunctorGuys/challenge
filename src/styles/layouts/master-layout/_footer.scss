@@ -1,0 +1,57 @@
+.l-master-layout-footer {
+  background: #ededea;
+
+  &__service {
+    padding: 30px 0;
+  }
+
+  &__socials {
+    background: #5b5b5b;
+    display: flex;
+    justify-content: center;
+    padding: 7px 0;
+  }
+
+  &__divider {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  &__social-button {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    height: 50px;
+    margin: 0 10px;
+    width: 50px;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &__social-icon {
+    color: white;
+    height: 30px !important;
+    width: 30px !important;
+  }
+}
+
+.l-master-layout-footer {
+  @include responsive-down(xs) {
+    text-align: center;
+    margin-bottom: 59px;
+
+    &__service {
+      display: inline-block !important;
+      width: auto !important;
+      overflow: hidden !important;
+      text-align: left;
+
+      .MuiGrid-item {
+        margin: 15px 0;
+      }
+    }
+  }
+}

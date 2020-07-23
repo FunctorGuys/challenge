@@ -1,0 +1,17 @@
+%middle-inline-block {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+%middle-inline-block-fixed {
+	display: inline-block;
+	margin-right: -5px;
+	vertical-align: middle;
+}
+
+%middle-center-pos-a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

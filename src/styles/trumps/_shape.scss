@@ -1,0 +1,15 @@
+.u-circle {
+  border-radius: 50% !important;
+}
+
+.u-square {
+  border-radius: 0 !important;
+}
+
+.u-dashed-circle {
+  background-image: linear-gradient(to right, #fff 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 6px 2px;
+  background-repeat: repeat-x;
+  height: 4px;
+}

@@ -1,0 +1,50 @@
+.l-master-layout-category {
+  $block: &;
+
+  align-self: stretch;
+  flex-grow: 1;
+
+  &--mobile {
+    align-items: center;
+    display: flex;
+    padding: 0 10px;
+
+    @at-root {
+      #{$block}__list {
+        padding-bottom: 50px !important;
+      }
+
+      #{$block}__list-sub-header {
+        background: palette(white) !important;
+        border-bottom: 1px solid palette(gainsboro, dark-10);
+      }
+    }
+  }
+
+  &__container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+  }
+
+  &__menu {
+    height: 100%;
+
+    &:hover {
+      #{$block}__menu-item {
+        border-bottom: 5px solid #111;
+      }
+    }
+  }
+
+  &__menu-item {
+    align-items: center;
+    border-bottom: 5px solid transparent;
+    color: #111 !important;
+    display: flex;
+    font-size: 15px;
+    height: 100%;
+    padding: 12px 9px !important;
+    text-transform: uppercase;
+  }
+}

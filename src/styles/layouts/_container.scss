@@ -1,0 +1,14 @@
+.l-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: ceil($g-gutter / 2);
+  padding-right: floor($g-gutter / 2);
+  position: relative;
+  width: 100%;
+
+  @include responsive-up(sm)    {width: $container-sm;}
+  @include responsive-up(md)    {width: $container-md;}
+  @include responsive-up(lg)    {width: $container-lg;}
+  @include responsive-up(xl)    {width: $container-xl;}
+  @include responsive-up(xxl)   {width: $container-xxl;}
+}
