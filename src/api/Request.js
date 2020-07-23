@@ -1,5 +1,13 @@
 /* eslint-disable no-empty */
-import { pathOr, mergeLeft, path, assoc, pipe, over, lensProp, mergeRight } from 'ramda';
+import {
+  pathOr,
+  path,
+  assoc,
+  pipe,
+  over,
+  lensProp,
+  mergeRight,
+} from 'ramda';
 import axios from 'axios';
 import { API_URL } from '../config';
 
@@ -16,8 +24,8 @@ axiosInstance.interceptors.request.use(
     const headers =
       token && !customConfig.noToken
         ? {
-          'X-ShopId': token,
-        }
+            'X-ShopId': token,
+          }
         : {};
 
     return over(lensProp('headers'), mergeRight(headers), config);
