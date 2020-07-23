@@ -21,4 +21,9 @@
   &__input {
     background: palette(bright-sun) !important;
   }
+
+  &__input-append {
+    top: 7px;
+    transform: translateY(0);
+  }
 }
