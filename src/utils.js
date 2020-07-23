@@ -50,6 +50,7 @@ const mapping = {
   isEmpty: (...args) => !validator.isEmpty(...args),
 };
 
+// TODO: Need to refactor to avoid side-effects
 const validateElements = (elements) =>
   elements.reduce((acc, item) => {
     removeErrorMessage(item.element);

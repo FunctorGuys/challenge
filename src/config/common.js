@@ -1,1 +1,1 @@
-export const API_URL = 'https://api.staging.fourthwall.com/api';
+export const API_URL = process.env.API_URL;

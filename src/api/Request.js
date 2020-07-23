@@ -9,7 +9,7 @@ import {
   mergeRight,
 } from 'ramda';
 import axios from 'axios';
-import { API_URL } from '../config';
+import { API_URL } from '@/config';
 
 const axiosInstance = axios.create({
   baseURL: API_URL,

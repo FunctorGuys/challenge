@@ -1,3 +1,18 @@
 {
-  "presets": ["@babel/preset-env"]
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "@/api": "./src/api",
+        "@/assets": "./src/assets",
+        "@/config": "./src/config",
+        "@/modules": "./src/modules",
+        "@/styles": "./src/styles",
+        "@/utils": "./src/utils"
+      }
+    }]
+  ]
 }

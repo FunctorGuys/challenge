@@ -25,7 +25,7 @@ module.exports = {
     module: true,
     FormData: true,
     FileReader: true,
-    import: true,
+    __dirname: true,
   },
   rules: {
     'no-console': 'warn',
