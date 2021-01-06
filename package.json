@@ -9,7 +9,7 @@
     "eslint": "./node_modules/.bin/eslint --ext .jsx,.js src/"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "query-string": "^6.13.1",
